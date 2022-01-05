@@ -31,7 +31,7 @@ Widget campoCodBar(controler_cod) {
     controller: controler_cod,
     keyboardType: TextInputType.number,
     validator: (valor) {
-      if (valor == null || valor.isEmpty || valor.trim().length < 13) {
+      if (valor.trim().length < 13) {
         return 'Invalido. O Codigo de barras precisa ter 13 digitos';
       }
     },
